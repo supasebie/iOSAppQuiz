@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		812CD9C72BF5AE6300D31813 /* CodeHistoryQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9C62BF5AE6300D31813 /* CodeHistoryQuizApp.swift */; };
-		812CD9C92BF5AE6300D31813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9C82BF5AE6300D31813 /* ContentView.swift */; };
+		812CD9C92BF5AE6300D31813 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9C82BF5AE6300D31813 /* GameView.swift */; };
 		812CD9CB2BF5AE6400D31813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812CD9CA2BF5AE6400D31813 /* Assets.xcassets */; };
 		812CD9CE2BF5AE6400D31813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812CD9CD2BF5AE6400D31813 /* Preview Assets.xcassets */; };
 		812CD9D62BF7C67600D31813 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9D52BF7C67600D31813 /* Question.swift */; };
@@ -19,12 +19,14 @@
 		812CD9E42BF7E5AE00D31813 /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9DE2BF7E5AE00D31813 /* ConfettiSwiftUI.swift */; };
 		812CD9E52BF7E5AE00D31813 /* View+ConfettiCannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812CD9DF2BF7E5AE00D31813 /* View+ConfettiCannon.swift */; };
 		817A039E2BF971130006A274 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A039D2BF971130006A274 /* Game.swift */; };
+		81BFAD8E2BF99E28001355E7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFAD8D2BF99E28001355E7 /* WelcomeView.swift */; };
+		81BFAD912BF9B132001355E7 /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFAD902BF9B132001355E7 /* GameColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		812CD9C32BF5AE6300D31813 /* CodeHistoryQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeHistoryQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812CD9C62BF5AE6300D31813 /* CodeHistoryQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeHistoryQuizApp.swift; sourceTree = "<group>"; };
-		812CD9C82BF5AE6300D31813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		812CD9C82BF5AE6300D31813 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		812CD9CA2BF5AE6400D31813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812CD9CD2BF5AE6400D31813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		812CD9D52BF7C67600D31813 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		812CD9DE2BF7E5AE00D31813 /* ConfettiSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiSwiftUI.swift; sourceTree = "<group>"; };
 		812CD9DF2BF7E5AE00D31813 /* View+ConfettiCannon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ConfettiCannon.swift"; sourceTree = "<group>"; };
 		817A039D2BF971130006A274 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		81BFAD8D2BF99E28001355E7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		81BFAD902BF9B132001355E7 /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				812CD9C62BF5AE6300D31813 /* CodeHistoryQuizApp.swift */,
+				81BFAD8F2BF9B110001355E7 /* Styles */,
 				812CD9D42BF7C66500D31813 /* Models */,
 				812CD9D72BF7D3A700D31813 /* Views */,
 				812CD9E02BF7E5AE00D31813 /* Sources */,
@@ -97,8 +102,9 @@
 		812CD9D72BF7D3A700D31813 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81BFAD8D2BF99E28001355E7 /* WelcomeView.swift */,
+				812CD9C82BF5AE6300D31813 /* GameView.swift */,
 				812CD9D82BF7D3BA00D31813 /* ChoiceTextView.swift */,
-				812CD9C82BF5AE6300D31813 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +128,14 @@
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
+		};
+		81BFAD8F2BF9B110001355E7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				81BFAD902BF9B132001355E7 /* GameColor.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -196,9 +210,11 @@
 				812CD9E52BF7E5AE00D31813 /* View+ConfettiCannon.swift in Sources */,
 				817A039E2BF971130006A274 /* Game.swift in Sources */,
 				812CD9D62BF7C67600D31813 /* Question.swift in Sources */,
-				812CD9C92BF5AE6300D31813 /* ContentView.swift in Sources */,
+				812CD9C92BF5AE6300D31813 /* GameView.swift in Sources */,
 				812CD9E22BF7E5AE00D31813 /* SlimRectangle.swift in Sources */,
 				812CD9D92BF7D3BA00D31813 /* ChoiceTextView.swift in Sources */,
+				81BFAD8E2BF99E28001355E7 /* WelcomeView.swift in Sources */,
+				81BFAD912BF9B132001355E7 /* GameColor.swift in Sources */,
 				812CD9E12BF7E5AE00D31813 /* RoundedCross.swift in Sources */,
 				812CD9E32BF7E5AE00D31813 /* Triangle.swift in Sources */,
 				812CD9C72BF5AE6300D31813 /* CodeHistoryQuizApp.swift in Sources */,

@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
-    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+struct GameView: View {
+
     @State private var counter: Int = 0
     
-    @State var accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
-    let question = Question(questionText: "What was the first computer bug?", possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"], correctAnswer: 0)
+    let question = Question(questionText: "What was the first computer bug?", possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"], correctAnswerIndex: 0)
     
     var body: some View {
         ZStack{
-            mainColor.ignoresSafeArea()
+            GameColor.mainColor.ignoresSafeArea()
             VStack{
                 Text("1/10")
                     .font(.callout)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.leading)
                     .padding()
                 Text(question.questionText)
                     .font(.largeTitle)
@@ -34,10 +32,10 @@ struct ContentView: View {
                     ForEach(0..<question.possibleAnswers.count, id: \.self) { answerIndex in
                         Button(action: {
                             print("Tapped on \(question.possibleAnswers[answerIndex])")
-                            if answerIndex == question.correctAnswer {
+                            if answerIndex == question.correctAnswerIndex {
                                 counter+=1
                             } else {
-                                mainColor = .red
+                                
                             }
                         }, label: {
                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
@@ -52,5 +50,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GameView()
 }
