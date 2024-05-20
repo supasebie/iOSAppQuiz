@@ -16,10 +16,10 @@ struct ChoiceTextView: View {
             .bold()
             .multilineTextAlignment(.center)
             .padding()
-            .border(GameColor.accentColor, width: 4)
+            .border(GameColor.accent, width: 4)
     }
 }
 
 #Preview {
-    ChoiceTextView(choiceText: "Choice Text!")
+    ChoiceTextView(choiceText: "Test")
 }

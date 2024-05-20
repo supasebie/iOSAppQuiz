@@ -8,13 +8,19 @@
 import Foundation
 
 struct Game {
+    
+    // MARK: - Private(set) variables
+    
     private(set) var attempts = [Question: Int]()
     private(set) var currentQuestionIndex = 0
     private(set) var isOver = false
+    
+    // MARK: - Private variables
     private let questions = Question.allQuestions.shuffled()
 
-    mutating func makeAttemptAtCurrentQuestion(_ index: Int) -> Void {
-        attempts[currentQuestion] = index
+    
+    mutating func makeAttemptAtCurrentQuestion(_ answerIndex: Int) -> Void {
+        attempts[currentQuestion] = answerIndex
     }
     
     mutating func updateGameStatus() {
